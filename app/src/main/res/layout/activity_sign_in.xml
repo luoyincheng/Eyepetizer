@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+                name="viewModel"
+                type="com.yincheng.closer.viewmodels.LoginViewModel" />
+
+        <variable
+                name="clickListener"
+                type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+        <com.yincheng.closer.widgets.FontTextView
+                android:id="@+id/tv_slogan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/slogan"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <com.yincheng.closer.widgets.CountDownView
+                android:id="@+id/cdv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_hourglass_full"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_slogan" />
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_username"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/til_password"
+                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintWidth_percent="0.8">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:text="@{viewModel.MUserName}"
+                    android:textColor="@android:color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_password"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/pv"
+                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintWidth_percent="0.8">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:text="@{viewModel.MPassword}"
+                    android:textColor="@android:color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.yincheng.closer.widgets.pathview.PathView
+                android:id="@+id/pv"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:fill="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.5"
+                app:naturalColors="true"
+                app:pathWidth="4dp"
+                app:svg="@raw/linecap" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_wechat"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="100dp"
+                android:onClickListener="@{clickListener}"
+                android:src="@drawable/login_wechat"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/iv_github"
+                app:layout_constraintWidth_percent="0.12" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_github"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="100dp"
+                android:onClickListener="@{clickListener}"
+                android:src="@drawable/login_github"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toRightOf="@+id/iv_wechat"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintWidth_percent="0.12" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

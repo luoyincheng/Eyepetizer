@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">closer</string>
+    <string name="slogan" translatable="false">even closer</string>
+    <string name="calendar" translatable="false">Calendar</string>
+    <string name="edit" translatable="false">Edit</string>
+    // 主界面
+    <string name="serial_task" translatable="false">线性任务</string>
+    <string name="parallel_task" translatable="false">并行任务</string>
+    <string name="settings" translatable="false">设置</string>
+    <string name="analysis" translatable="false">分析</string>
+    <string name="trending" translatable="false">趋势</string>
+    <string name="statistics" translatable="false">统计</string>
+
+    //设置界面
+    <string name="font_family_ui" translatable="false">界面字体</string>
+    <string name="font_family_reader" translatable="false">阅读字体</string>
+
+</resources>

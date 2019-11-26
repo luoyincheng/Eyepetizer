@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GitHubContributionsView">
+        <attr name="username" format="string" />
+        <attr name="baseColor" format="color" />
+        <attr name="baseEmptyColor" format="color" />
+        <attr name="backgroundBaseColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="displayMonth" format="boolean" />
+        <attr name="lastWeeks" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ExponentView">
+        <attr name="ExponentViewPathWidth" format="dimension" />
+        <attr name="ExponentViewPathColor" format="color" />
+        <attr name="ExponentViewDotColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SVGImageView">
+        <!-- Location of the SVG document. -->
+        <attr name="SVGImageViewSvg" format="reference|string" />
+        <attr name="SVGImageViewCss" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PathView">
+        <attr name="pathColor" format="color|reference" />
+        <attr name="pathWidth" format="dimension|reference" />
+        <attr name="svg" format="reference" />
+        <attr name="fill" format="boolean" />
+        <attr name="fillColor" format="color|reference" />
+        <attr name="naturalColors" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FontTextView">
+        <attr name="drawableColor" format="color" />
+        <attr name="typeface">
+            <enum name="arial_rounded_mt_bold" value="0" />
+            <enum name="qingliuti" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="palette" format="reference" />
+    <attr name="windowBackgroundColor" format="reference" />
+    <!--<attr name="cardBackgroundColor" format="reference"/>-->
+    <attr name="headerBackgroundColor" format="reference" />
+    <attr name="highlightedBackgroundColor" format="reference" />
+    <attr name="useHabitColorAsPrimary" format="boolean" />
+    <attr name="aboutScreenColor" format="reference" />
+
+    <attr name="highContrastTextColor" format="reference" />
+    <attr name="mediumContrastTextColor" format="reference" />
+    <attr name="lowContrastTextColor" format="reference" />
+
+    <attr name="highContrastReverseTextColor" format="reference" />
+    <attr name="mediumContrastReverseTextColor" format="reference" />
+    <attr name="lowContrastReverseTextColor" format="reference" />
+
+    <attr name="iconAdd" format="reference" />
+    <attr name="iconArchive" format="reference" />
+    <attr name="iconChangeColor" format="reference" />
+    <attr name="iconDownload" format="reference" />
+    <attr name="iconEdit" format="reference" />
+    <attr name="iconUnarchive" format="reference" />
+    <attr name="dialogIconChangeColor" format="reference" />
+    <attr name="iconReminder" format="reference" />
+    <attr name="iconFrequency" format="reference" />
+    <attr name="iconFilter" format="reference" />
+
+    <attr name="toolbarPopupTheme" format="reference" />
+
+    <attr name="widgetShadowAlpha" format="float" />
+    <attr name="widgetBackgroundAlpha" format="float" />
+
+    <!-- Pre-Lollipop -->
+    <attr name="cardBackground" format="reference" />
+    <attr name="headerBackground" format="reference" />
+    <attr name="selectedBackground" format="reference" />
+
+</resources>

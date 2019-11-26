@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cv_ui"
+            style="@style/settings_card_view"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+            <com.yincheng.closer.widgets.FontTextView
+                    android:id="@+id/ftv_font_family_ui"
+                    style="@style/settings_text_view"
+                    android:text="@string/font_family_ui" />
+
+            <View
+                    android:id="@+id/divider_font_family_ui"
+                    style="@style/settings_divider"
+                    app:layout_constraintTop_toBottomOf="@+id/ftv_font_family_ui"
+                    tools:ignore="MissingConstraints" />
+
+            <com.yincheng.closer.widgets.FontTextView
+                    android:id="@+id/ftv_font_family_reader"
+                    style="@style/settings_text_view"
+                    android:text="@string/font_family_reader"
+                    app:layout_constraintTop_toBottomOf="@+id/divider_font_family_ui" />
+
+            <View
+                    android:id="@+id/divider_font_family_reader"
+                    style="@style/settings_divider"
+                    app:layout_constraintTop_toBottomOf="@+id/ftv_font_family_reader"
+                    tools:ignore="MissingConstraints" />
+
+            <com.yincheng.closer.widgets.FontTextView
+                    android:id="@+id/ftv_primary_color"
+                    style="@style/settings_text_view"
+                    android:text="@string/font_family_ui"
+                    app:layout_constraintTop_toBottomOf="@+id/divider_font_family_reader" />
+
+            <View
+                    android:id="@+id/divider_primary_color"
+                    style="@style/settings_divider"
+                    app:layout_constraintTop_toBottomOf="@+id/ftv_primary_color"
+                    tools:ignore="MissingConstraints" />
+
+            <com.yincheng.closer.widgets.FontTextView
+                    android:id="@+id/ftv_drawer_width"
+                    style="@style/settings_text_view"
+                    android:text="@string/font_family_ui"
+                    app:layout_constraintTop_toBottomOf="@+id/divider_primary_color" />
+
+            <View
+                    android:id="@+id/divider_drawer_width"
+                    style="@style/settings_divider"
+                    app:layout_constraintTop_toBottomOf="@+id/ftv_drawer_width"
+                    tools:ignore="MissingConstraints" />
+
+            <com.yincheng.closer.widgets.FontTextView
+                    android:id="@+id/ftv_sign_out"
+                    style="@style/settings_text_view"
+                    android:text="@string/font_family_ui"
+                    app:layout_constraintTop_toBottomOf="@+id/divider_drawer_width" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

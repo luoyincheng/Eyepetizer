@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+                name="clickListener"
+                type="android.view.View.OnClickListener" />
+
+        <variable
+                name="longClickListener"
+                type="android.view.View.OnLongClickListener" />
+
+        <variable
+                name="mission"
+                type="com.yincheng.closer.provider.models.Mission" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cv_mission"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:onClick="@{clickListener}"
+            android:onLongClick="@{longClickListener}"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_mission_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:imageFromUrl="@{mission.imageUrl}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_mission_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{mission.name}"
+                android:textAppearance="?attr/textAppearanceListItem"
+                tools:text="Tomato" />
+    </androidx.cardview.widget.CardView>
+</layout>

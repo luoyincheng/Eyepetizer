@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/navigation_garden"
+        app:startDestination="@+id/mission_list_fragment">
+
+    <!--1.enterAnim 和 exitAnim 分别用于missionDetailFragment 和 missionListFragment，用于从list进入detail时候-->
+    <!--1.popEnterAnim 和 popExitAnim 分别用于missionListFragment 和 missionDetailFragment，用于从detail返回到list的时候-->
+
+    <fragment
+            android:id="@+id/mission_list_fragment"
+            android:name="com.yincheng.closer.views.fragments.MissionListFragment"
+            android:label="MissionList"
+            tools:layout="@layout/fragment_mission_list">
+        <action
+                android:id="@+id/action_mission_list_fragment_to_mission_detail_fragment"
+                app:destination="@+id/mission_detail_fragment"
+                app:enterAnim="@anim/translate_right_in"
+                app:exitAnim="@anim/translate_left_out"
+                app:popEnterAnim="@anim/translate_left_in"
+                app:popExitAnim="@anim/translate_right_out" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/mission_detail_fragment"
+            android:name="com.yincheng.closer.views.fragments.MissionDetailFragment"
+            android:label="MissionDetail"
+            tools:layout="@layout/fragment_mission_detail">
+        <argument
+                android:name="missionId"
+                app:argType="string" />
+    </fragment>
+
+</navigation>

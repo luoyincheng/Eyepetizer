@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="@dimen/launcherRadioButtonIconSize"
+        android:height="@dimen/launcherRadioButtonIconSize"
+        android:autoMirrored="true"
+        android:viewportWidth="1024"
+        android:viewportHeight="1024">
+    <path
+            android:fillColor="@color/checked"
+            android:pathData="M682.67,256 L780.37,353.71 572.16,561.92 401.49,391.25 85.33,707.84 145.49,768 401.49,512 572.16,682.67 840.96,414.29 938.67,512 938.67,256 682.67,256Z" />
+</vector>

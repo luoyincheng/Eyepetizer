@@ -1,0 +1,97 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="android:windowAnimationStyle">@style/translate_animation</item>
+    </style>
+
+    <style name="CustomizedTextInputLayout" parent="AppTheme">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+    </style>
+
+    <style name="FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="CardHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:textSize">@dimen/regularTextSize</item>
+    </style>
+
+    <style name="Splash" parent="FullScreen">
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="Login" parent="CustomizedTextInputLayout">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="CardCommon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:background">?cardBackground</item>
+    </style>
+
+    <style name="Card" parent="CardCommon">
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <style name="settings_card_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginTop">@dimen/card_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/card_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/card_margin_left_right</item>
+        <!--<item name="cardElevation">@dimen/card_elevation</item>-->
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+    </style>
+
+    <style name="settings_text_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintDimensionRatio">7:1</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textSize" tools:ignore="SpUsage">19dp</item>
+        <item name="typeface">qingliuti</item>
+    </style>
+
+    <style name="settings_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height" tools:ignore="PxUsage">2px</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+
+    <style name="translate_animation">
+        <item name="android:activityOpenEnterAnimation">@anim/translate_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/translate_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/translate_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/translate_right_out</item>
+    </style>
+</resources>

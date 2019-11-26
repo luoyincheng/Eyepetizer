@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3c5f78</color>
+    <color name="colorPrimaryDark">#bbff8800</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="unchecked">#FFFFFFFF</color>
+    <color name="checked">@color/colorAccent</color>
+
+
+    <color name="divider">#15000000</color>
+</resources>

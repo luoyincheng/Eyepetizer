@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navigation_drawer_header_height">30dp</dimen>
+    <dimen name="navigation_drawer_header_padding">5dp</dimen>
+    <dimen name="navigation_drawer_image_width">100dp</dimen>
+
+    <dimen name="regularTextSize">16sp</dimen>
+    <dimen name="smallTextSize">14sp</dimen>
+
+    //launcher
+    <dimen name="launcherRadioButtonTextSize">12dp</dimen>
+    <dimen name="launcherRadioButtonIconSize">30dp</dimen>
+
+
+    //settings
+    <dimen name="card_margin_left_right">8dp</dimen>
+    <dimen name="card_margin_top">5dp</dimen>
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+
+
+    //contributionsView
+    <dimen name="spacing_large">0dp</dimen>
+
+</resources>
