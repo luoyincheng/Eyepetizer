@@ -3,65 +3,41 @@ package com.yincheng.eyepetizer.views.activities
 import android.content.Intent
 import android.os.Bundle
 import com.yincheng.eyepetizer.R
-import com.yincheng.eyepetizer.helpers.SPHelper
-import com.yincheng.eyepetizer.provider.SP_IS_LOGIN
+import kotlinx.android.synthetic.main.activity_splash.*
 
-class SplashActivity : SurfaceAnimOneOffActivity() {
-    //    private var disposable: Disposable? = null
-//    private var tvCountDown: AppCompatTextView? = null
+class SplashActivity : OneOffActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-
-        // todo
-//        disposable = Observable
-//            .timer(2000, TimeUnit.MILLISECONDS)
-//            .subscribeOn(Schedulers.io())
-//            .observeOn(AndroidSchedulers.mainThread())
-//            .subscribe {
-//                when (isLogin) {
-//                    true -> intent.setClass(this@SplashActivity, LauncherActivity::class.java)
-//                    else -> intent.setClass(this@SplashActivity, SignInActivity::class.java)
-//                }
-////                startActivity(intent)
-//            }
-//
-//        disposable = Observable
-//            .interval(1, TimeUnit.SECONDS)
-//            .subscribeOn(Schedulers.io())
-//            .observeOn(AndroidSchedulers.mainThread())
-//            .subscribe { int ->
-//                tvCountDown?.text = int.toString()
-//            }
-//        pv?.setOnClickListener {
-//
-//
-//        }
+        loopPlayVideo()
+        initClickListener()
     }
 
-//    override fun onPause() {
-//        super.onPause()
-//        disposable?.dispose()
-//    }
-//
-//    override fun onStop() {
-//        super.onStop()
-//        disposable?.dispose()
-//    }
-//
-//    override fun onDestroy() {
-//        super.onDestroy()
-//        disposable?.dispose()
-//    }
-
-    override fun onPageAnimEnd() {
-        super.onPageAnimEnd()
-        val intent = Intent()
-        when (SPHelper.getBoolean(SP_IS_LOGIN)) {
-            true -> intent.setClass(this@SplashActivity, LauncherActivity::class.java)
-            else -> intent.setClass(this@SplashActivity, SignInActivity::class.java)
+    private fun loopPlayVideo() {
+        with(video_view) {
+            setVideoPath("android.resource://$packageName/${R.raw.splashvideo}")
+            setOnPreparedListener {
+                requestFocus()
+                seekTo(0)
+                start()
+            }
+            setOnCompletionListener {
+                start()
+            }
         }
-        startActivity(intent)
+    }
+
+    private fun initClickListener() {
+        with(tv_enter) {
+            setOnClickListener {
+                startActivity(
+                    Intent(
+                        this@SplashActivity,
+                        LauncherActivity::class.java
+                    )
+                )
+            }
+        }
     }
 }

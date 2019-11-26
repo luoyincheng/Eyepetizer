@@ -14,5 +14,6 @@
     //设置界面
     <string name="font_family_ui" translatable="false">界面字体</string>
     <string name="font_family_reader" translatable="false">阅读字体</string>
+    <string name="enter">Enter</string>
 
 </resources>
