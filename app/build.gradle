@@ -13,7 +13,7 @@ android {
     compileSdkVersion 28
     dataBinding { enabled = true }
     defaultConfig {
-        applicationId 'com.yincheng.closer'
+        applicationId 'com.yincheng.eyepetizer'
         minSdkVersion 22
         versionCode 1
         versionName '1.0'
@@ -40,7 +40,7 @@ android {
         release {
             keyAlias 'kelusi'
             keyPassword '----'
-            storeFile file('closer.jks')
+            storeFile file('eyepetizer.jks')
             storePassword '-----'
         }
     }
@@ -100,6 +100,13 @@ dependencies {
     implementation('com.opencsv:opencsv:3.9') {//todo to un
         exclude group: 'commons-logging', module: 'commons-logging'
     }
+
+    implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-armv5:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-arm64:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.8'
+    implementation 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.8'
 
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.0-beta-4'
 

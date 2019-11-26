@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">closer</string>
+    <string name="app_name" translatable="false">eyepetizer</string>
     <string name="slogan" translatable="false">even closer</string>
     <string name="calendar" translatable="false">Calendar</string>
     <string name="edit" translatable="false">Edit</string>

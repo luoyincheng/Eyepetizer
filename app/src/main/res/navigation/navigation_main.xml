@@ -10,7 +10,7 @@
 
     <fragment
             android:id="@+id/mission_list_fragment"
-            android:name="com.yincheng.closer.views.fragments.MissionListFragment"
+            android:name="com.yincheng.eyepetizer.views.fragments.MissionListFragment"
             android:label="MissionList"
             tools:layout="@layout/fragment_mission_list">
         <action
@@ -24,7 +24,7 @@
 
     <fragment
             android:id="@+id/mission_detail_fragment"
-            android:name="com.yincheng.closer.views.fragments.MissionDetailFragment"
+            android:name="com.yincheng.eyepetizer.views.fragments.MissionDetailFragment"
             android:label="MissionDetail"
             tools:layout="@layout/fragment_mission_detail">
         <argument

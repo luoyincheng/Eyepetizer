@@ -16,7 +16,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:context=".views.activity.LauncherActivity" />
 
-        <com.yincheng.closer.widgets.contributions.GitHubContributionsView
+        <com.yincheng.eyepetizer.widgets.contributions.GitHubContributionsView
                 android:id="@+id/gcv_launcher"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -7,7 +7,7 @@
 
         <variable
                 name="viewModel"
-                type="com.yincheng.closer.viewmodels.LauncherViewModel" />
+                type="com.yincheng.eyepetizer.viewmodels.LauncherViewModel" />
     </data>
 
     <RelativeLayout
@@ -29,7 +29,7 @@
                     android:src="@drawable/ic_serial_tasks"
                     app:layout_constraintLeft_toLeftOf="parent" />
 
-            <com.yincheng.closer.widgets.CountDownView
+            <com.yincheng.eyepetizer.widgets.CountDownView
                     android:id="@+id/cdv_main"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -52,7 +52,7 @@
                     app:layout_constraintRight_toRightOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.yincheng.closer.widgets.doublesideview.CompoundDrawerLayout
+        <com.yincheng.eyepetizer.widgets.doublesideview.CompoundDrawerLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_above="@+id/csl_bottom_view_main"
@@ -72,7 +72,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="start">
 
-                <com.yincheng.closer.widgets.FontTextView
+                <com.yincheng.eyepetizer.widgets.FontTextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:text="@string/serial_task"
@@ -92,7 +92,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="end">
 
-                <com.yincheng.closer.widgets.FontTextView
+                <com.yincheng.eyepetizer.widgets.FontTextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/shape_hollow_rect_rounded_corner"
@@ -107,7 +107,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </com.yincheng.closer.widgets.doublesideview.CompoundDrawerLayout>
+        </com.yincheng.eyepetizer.widgets.doublesideview.CompoundDrawerLayout>
 
         <RadioGroup
                 android:id="@+id/csl_bottom_view_main"

@@ -6,7 +6,7 @@
 
         <variable
                 name="viewModel"
-                type="com.yincheng.closer.viewmodels.LoginViewModel" />
+                type="com.yincheng.eyepetizer.viewmodels.LoginViewModel" />
 
         <variable
                 name="clickListener"
@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:background="@color/colorPrimary">
 
-        <com.yincheng.closer.widgets.FontTextView
+        <com.yincheng.eyepetizer.widgets.FontTextView
                 android:id="@+id/tv_slogan"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-        <com.yincheng.closer.widgets.CountDownView
+        <com.yincheng.eyepetizer.widgets.CountDownView
                 android:id="@+id/cdv_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
                     android:textColor="@android:color/white" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.yincheng.closer.widgets.pathview.PathView
+        <com.yincheng.eyepetizer.widgets.pathview.PathView
                 android:id="@+id/pv"
                 android:layout_width="0dp"
                 android:layout_height="0dp"

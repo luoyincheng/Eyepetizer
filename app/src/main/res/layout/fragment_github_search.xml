@@ -6,7 +6,7 @@
 
         <variable
                 name="viewModel"
-                type="com.yincheng.closer.viewmodels.MissionDetailViewModel" />
+                type="com.yincheng.eyepetizer.viewmodels.MissionDetailViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

@@ -15,7 +15,7 @@
 
         <variable
                 name="mission"
-                type="com.yincheng.closer.provider.models.Mission" />
+                type="com.yincheng.eyepetizer.provider.models.Mission" />
     </data>
 
     <androidx.cardview.widget.CardView
